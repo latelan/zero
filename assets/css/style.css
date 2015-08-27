@@ -122,9 +122,14 @@ code {
 	color: #F0DFDF;
 	padding: 1px 3px;
 }
+blockquote p {
+	line-height: 170%;
+	font-family: Microsoft Yahei;
+}
 p {
 	font-size: 15px;
 	font-weight: normal;
+	font-family: Microsoft Yahei;
 	line-height: 170%;
 	letter-spacing: 1px;
 	margin: 1.2em 0em 1em 0em;
