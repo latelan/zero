@@ -2,7 +2,7 @@ permalink: /:year/:month/:day/:title.html
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 title : latelan's Blog
 author :
