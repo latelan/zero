@@ -36,9 +36,23 @@ paginate:           5
 paginate_path:      /page:num/
 
 # Markdown
-markdown:           kramdown
 kramdown:
-  input:            GFM
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     2..4  # h2-h4 作为目录
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  footnote_nr:    1
+  enable_coderay: false
+  hard_wrap:      true  # 如果 Markdown 文本中有折行的话，会转换为标签
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
 
 # Navigation
 nav:
