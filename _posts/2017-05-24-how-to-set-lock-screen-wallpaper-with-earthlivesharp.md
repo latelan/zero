@@ -10,9 +10,9 @@ tags: []
 
 目标：定时修改锁屏壁纸为最新的地球照片。
 
-原来在win7下修改锁屏壁纸不是一件容易的事情。修改注册表，修改管理策略，还要把图片放在指定位置，指定名称，大小还有限制。不过还是有人找到了方法，参考这篇文章[《win7设置锁屏背景壁纸并自动定时修改》](http://www.capjsj.cn/lock_screen_background.html)可以做到修改锁屏壁纸以及使用任务计划功能实现定期修改。但图片不能简单的从EarthLiveSharp中拷贝，桌面背景的设置是调用API，API提供了放置图片的方式。设置合适的方式，一个550\*550的图片可以放到1920\*1080的屏幕上也可以放到1280*1024的屏幕上而不会变形。但锁屏壁纸需要的是一张格式为jpg的图片，没有API可用，所以我们需要做出来相应的这张照片，然后拷贝到相应的位置。
+原来在win7下修改锁屏壁纸不是一件容易的事情。修改注册表，修改管理策略，还要把图片放在指定位置，指定名称，大小还有限制。不过还是有人找到了方法，参考这篇文章[《win7设置锁屏背景壁纸并自动定时修改》](http://www.capjsj.cn/lock_screen_background.html)可以做到修改锁屏壁纸以及使用任务计划功能实现定期修改。但图片不能简单的从EarthLiveSharp中拷贝，桌面背景的设置是调用API，API提供了放置图片的方式。设置合适的方式，一个550\*550的图片可以放到1920\*1080的屏幕上也可以放到1280\*1024的屏幕上而不会变形。但锁屏壁纸需要的是一张格式为jpg的图片，没有API可用，所以我们需要做出来相应的这张照片，然后拷贝到相应的位置。
 
-修改了下EarthLiveSharp的代码，将制作过程加了进去，代码见[这里](https://github.com/latelan/EarthLiveSharp/blob/master/EarthLiveSharp/Program.cs#L180-L210)。这样每次拉到新图片时会做一张适合当前屏幕分辨率的锁屏壁纸（backgroundDefault.jpg）在```images```目录中。
+修改了下EarthLiveSharp的代码，将制作过程加了进去，代码见[这里](https://github.com/latelan/EarthLiveSharp/commit/70f7f921da7f306ade8b7e66c3b2fa3bee78ec09#diff-7a4aaa83d7db7518c10f03c724232b51)。这样每次拉到新图片时会做一张适合当前屏幕分辨率的锁屏壁纸（backgroundDefault.jpg）在```images```目录中。
 
 这样图片的问题解决，接下来让其定期更新。做一个bat文件，名字叫做```change_lock_screen_wallpaper.bat```。
 ```bat
