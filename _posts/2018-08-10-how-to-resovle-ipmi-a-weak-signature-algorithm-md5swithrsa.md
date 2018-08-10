@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "如何解决 IPMI MD5withRSA被视为弱签名无法访问的问题"
-description: ""
+title: "IPMI access error: weak signature algorithm MD5withRSA"
+description: "IPMI MD5withRSA 签名算法被视为弱签名无法访问的问题"
 date: 2018-08-10
 tags: [linux]
 comments: true
