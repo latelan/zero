@@ -3,7 +3,7 @@ layout: post
 title: "the flower and spring"
 description: ""
 date: 2016-03-29
-tags: [Life]
+tags: [life]
 ---
 
 搬了新工位，现在的地方变小了，一个格子两个人，背靠背。过来两天还是没有适应，可能需要时间吧。坐在这怀念在原来的地方，大概是个恋旧的人。还是喜欢窗户，喜欢眺望远处，喜欢无边无际的瞎想。现在都没啦，得需要调整下。

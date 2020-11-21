@@ -3,7 +3,7 @@ layout: post
 title: "过去的时光"
 description: ""
 date: 2015-08-27
-tags: [Life]
+tags: [life]
 ---
 
 > 在年轻的时候，如果你爱上一个人，请你，请你一定要温柔对待他。
