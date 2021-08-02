@@ -19,7 +19,14 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               
+  id:
+
+# Valine
+valine_comment:
+  enable:           true
+  leancloud_appid:  "FGf9GRu7flAulP8VtcLclF8y-gzGzoHsz"
+  leancloud_appkey: "6mr9cwxW8WULaUE915zPRk78"
+  placeholder:      "Say something"
 
 # URL
 url:                "http://zero.latelan.com" # the base hostname & protocol for your site

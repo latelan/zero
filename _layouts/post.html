@@ -26,6 +26,7 @@ layout: default
 
   {{ content }}
 
+  <hr/>
   <!-- Disqus -->
   {% if page.comments != false and site.disqus.id %}
   <div class="post-disqus">
@@ -33,5 +34,9 @@ layout: default
       {% include disqus.html %}
   </div>
   {% endif %}
+
+
+  <!-- Valine -->
+  {% include valine_comments.html %}
 
 </div>
