@@ -24,8 +24,8 @@ disqus:
 # Valine
 valine_comment:
   enable:           true
-  leancloud_appid:  "FGf9GRu7flAulP8VtcLclF8y-gzGzoHsz"
-  leancloud_appkey: "6mr9cwxW8WULaUE915zPRk78"
+  leancloud_appid:  {{ secrets.LEANCLOUD_APPID }}
+  leancloud_appkey: {{ secrets.LEANCLOUD_APPKEY }}
   placeholder:      "Say something"
 
 # URL
