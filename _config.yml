@@ -15,7 +15,11 @@ copyright:
 
 # Google-analytics
 google-analytics:
-  id:               "UA-98478757-1"
+  id:
+
+# Google-tag-manager
+google-tag-manager:
+  id:               "GTM-53H4LGK"
 
 # Disqus
 disqus:
