@@ -52,6 +52,8 @@ services:
 启动服务
 ```bash
 $ docker-compose -f docker-compose.local.yml start
+# 后续可使用
+$ docker-compose -f docker-compose.local.yml up
 ```
 
 其他命令记录
