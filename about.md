@@ -3,7 +3,7 @@ title: About
 permalink: /about/
 ---
 
-自由,对新事物充满好奇
+自由，对新事物充满好奇
 
 ### 关于这个博客
 
